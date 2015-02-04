@@ -11,10 +11,11 @@
 
   /* istanbul ignore next */
   if ( typeof exports === 'object' ) {
-    return ( module.exports = factory( require( 'angular' ) ) );
+    require( 'angular' );
+    return ( module.exports = factory( window.angular ) );
   }
 
-  factory( window.angular );
+  return factory( window.angular );
 }( function ( angular ) {
   'use strict';
 
