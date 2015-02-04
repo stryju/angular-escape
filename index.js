@@ -96,5 +96,5 @@
   var ngModule = angular.module( 'str.angular-escape', [ 'ng' ] )
     .service( 'esc', service );
 
-  return ngModule;
+  return ngModule.name;
 }));
